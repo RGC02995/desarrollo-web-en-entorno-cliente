@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Citas</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- CABECERA -->
+      <header>
+        <img src="logo.png" alt="Logo Clínica Davante" />
+        <h1>Davante - Gestión de citas</h1>
+      </header>
+
+      <!-- FORMULARIO PARA AÑADIR / MODIFICAR CITAS -->
+      <section class="form-section">
+        <form id="new-date">
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" required />
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="dni">DNI:</label>
+          <input type="text" id="dni" name="dni" required />
+
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required />
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+
+          <label for="nacimiento">Nacimiento:</label>
+          <input type="date" id="nacimiento" name="nacimiento" required />
+
+          <label for="observaciones">Observaciones:</label>
+          <textarea
+            id="observaciones"
+            name="observaciones"
+            cols="20"
+            rows="4"
+          ></textarea>
+
+          <input type="hidden" id="idCita" />
+
+          <button type="submit">Guardar Cita</button>
+        </form>
+      </section>
+
+      <!-- TABLA DE CITAS -->
+      <section class="table-section">
+        <h2>Listado de citas</h2>
+        <table id="tabla-citas">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Nombre</th>
+              <th>Apellidos</th>
+              <th>DNI</th>
+              <th>Teléfono</th>
+              <th>Nacimiento</th>
+              <th>Observaciones</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Las citas se agregarán aquí con JavaScript -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- PIE DE PÁGINA -->
+      <footer>
+        <p>Clínica Davante - Contacto: 123-456-789</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
