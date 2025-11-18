@@ -64,3 +64,13 @@ textarea {
 .error {
   color: #ff6b6b;
 }
+
+.container-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.logo {
+  width: 150px;
+}
